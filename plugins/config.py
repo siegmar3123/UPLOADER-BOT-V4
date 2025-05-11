@@ -33,7 +33,7 @@ class Config(object):
 
     DATABASE_URL = os.environ.get("DATABASE_URL")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", 1001234567890))
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID"))
     SESSION_NAME = "UploaderXNTBot"
