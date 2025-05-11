@@ -31,26 +31,26 @@ class Config(object):
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID"))
     SESSION_NAME = "UploaderXNTBot"
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
 
     TG_MIN_FILE_SIZE = 2194304000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME")
     ADL_BOT_RQ = {}
 
     # Set False off else True
-    TRUE_OR_FALSE = os.environ.get("TRUE_OR_FALSE", "").lower() == "true"
+    TRUE_OR_FALSE = os.environ.get("TRUE_OR_FALSE").lower() == "true"
 
     # Shortlink settings
-    SHORT_DOMAIN = environ.get("SHORT_DOMAIN", "")
-    SHORT_API = environ.get("SHORT_API", "")
+    SHORT_DOMAIN = environ.get("SHORT_DOMAIN")
+    SHORT_API = environ.get("SHORT_API")
 
     # Verification video link
-    VERIFICATION = os.environ.get("VERIFICATION", "")
+    VERIFICATION = os.environ.get("VERIFICATION")
 
     
